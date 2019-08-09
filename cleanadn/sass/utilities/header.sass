@@ -1,0 +1,115 @@
+.header
+	+burger(#808019, #808019, #808019)
+	z-index: 1000
+	position: fixed
+	width: 100%
+	top: -300px
+	background: $white
+	+sombra(0px, -7px, 15px, 0px)
+	.logo
+		a
+			svg
+				width: 95%
+				margin-left: 10%
+				margin-top: 2%
+				.cls-1,.cls-3
+					fill: #72809e		
+				.cls-2
+					fill: #808019
+				.cls-3
+					stroke: #72809e
+					stroke-miterlimit: 10
+		@media (max-width: 1201px)
+			a
+				svg
+					margin-top: 15%
+		@media (max-width: 768px)
+			position: absolute
+			top: -7px
+		@media (max-width: 643px)
+			top: -3px
+			a
+				svg
+					width: 110%
+					margin-left: 10%
+		@media (max-width: 500px)
+			top: -5px
+			a
+				svg
+					width: 140%
+	.dat
+		border-bottom: solid 3px #808019 
+		&-what
+			a
+				+fuente(17px, #72809E, Arial, $weight-bold)
+				embed
+					width: 9%
+					margin-right: 2%
+					margin-bottom: -4px
+				@media (max-width: 890px)
+					+fuente(15px, #72809E, Arial, $weight-bold)
+					embed
+						width: 11%
+				@media (max-width: 768px)
+					+fuente(14px, #72809E, Arial, $weight-bold)
+					embed
+						width: 10%
+			@media (max-width: 580px)
+				padding: 0px
+
+		&-cot
+			a
+				background: #808019
+				padding: 2% 10%
+				+borde_redondo(7px, 7px, 7px, 7px)
+				+fuente(17px, #fff, Arial, $weight-bold)
+				@media (max-width: 890px)
+					+fuente(15px, #fff, Arial, $weight-bold)
+				@media (max-width: 643px)
+					padding: 2% 8%
+					+fuente(15px, #fff, Arial, $weight-bold)
+				@media (max-width: 580px)
+					display: none !important
+		&-burger
+			display: none !important
+			@media (max-width: 580px)
+				display: block !important
+
+		@media (max-width: 580px)
+			border-bottom: solid 0px #808019
+
+	.men-off
+		display: block !important
+		border-top: solid 1px #808019
+		margin-top: 2% !important
+		ul
+			li
+				display: block !important
+				a
+					font-size: 14px
+	.menu
+		padding: 0px
+		ul
+			margin: 0px
+			padding: 0px
+			li
+				list-style: none
+				display: inline-block
+				padding: 0px 3%
+				a
+					+fuente(15px, #808019, Arial, $weight-light)
+		@media (max-width: 1201px)
+			ul
+				li
+					padding: 0px 2%
+					padding-top: 0%
+
+		@media (max-width: 890px)
+			padding: 1%
+			ul
+				li
+					padding: 0px 1.7%
+					a
+						+fuente(12px, #808019, Arial, $weight-light)
+		@media (max-width: 580px)
+			display: none	

@@ -1,0 +1,623 @@
+.wrapper
+	z-index: 100
+	.mov
+		position: relative
+		video
+			margin-top: 80px
+			width: 100%
+		&-text
+
+			background-color: rgba(255, 255, 255, 0.1)
+			position: absolute
+			bottom: 2%
+			h1
+				padding-left: 10%
+				+fuente(25px, #fff, Arial, $weight-bold)
+	.slider
+		position: relative
+		.cycle-slideshow
+			overflow: hidden
+			//height: 657px
+			article
+				width: 100%
+				.mod
+					color: #fff
+				span
+					line-height: 1em
+					position: absolute
+					top: 10%
+					right: 1%
+					opacity: .8
+					+fuente(40px, #808E2A, Arial, $weight-bold)
+				i
+					line-height: 1.2em
+					position: absolute
+					top: 30%
+					right: 1%
+					opacity: .8
+					padding: 0px 0px 0px 70%
+					+fuente(16px, #000, Arial, $weight-bold)	
+				img
+					width: 100%
+				.white
+					color: #fff !important
+				p
+					position: absolute
+					top: 30%
+					left: 30%
+					opacity: .8
+					+fuente(74px, #1E1E1D, Arial, $weight-bold)
+					@media (max-width: 1219px)
+						+fuente(60px, #1E1E1D, Arial, $weight-bold)
+					@media (max-width: 1013px)	
+						+fuente(50px, #1E1E1D, Arial, $weight-bold)
+					@media (max-width: 910px)
+						+fuente(40px, #1E1E1D, Arial, $weight-bold)
+					@media (max-width: 500px)
+						+fuente(25px, #1E1E1D, Arial, $weight-bold)
+				h2
+					position: absolute
+					top: 30%
+					left: 30%
+					opacity: .8
+					+fuente(74px, #1E1E1D, Arial, $weight-bold)	
+					@media (max-width: 1219px)
+						+fuente(60px, #1E1E1D, Arial, $weight-bold)
+					@media (max-width: 1013px)
+						+fuente(50px, #1E1E1D, Arial, $weight-bold)
+					@media (max-width: 910px)
+						+fuente(40px, #1E1E1D, Arial, $weight-bold)	
+					@media (max-width: 500px)
+						+fuente(25px, #1E1E1D, Arial, $weight-bold)	
+
+				a
+					position: absolute
+					top: 46%
+					left: 40%
+					background: #808019
+					padding: 1% 4%
+					+borde_redondo(7px, 7px, 7px, 7px)
+					+fuente(17px, #fff, Arial, $weight-bold)
+					@media (max-width: 910px)
+						padding: 1% 3%
+						+fuente(15px, #fff, Arial, $weight-bold)
+					@media (max-width: 500px)
+						+fuente(11px, #fff, Arial, $weight-bold)
+				.category
+					padding: 2% 0%
+					background: #444444	
+					position: absolute
+					bottom: 1%
+					p
+						+fuente(17px, #fff, Arial, $weight-light)
+						span
+							+fuente(17px, #808019, Arial, $weight-light)
+							strong
+								+fuente(17px, #808019, Arial, $weight-light)
+					@media (max-width: 1333px)
+						bottom: 2%	
+					@media (max-width: 1017px)
+						padding: 1% 0%
+						bottom: 1%
+						p
+							+fuente(15px, #fff, Arial, $weight-light)
+							span
+								+fuente(15px, #808019, Arial, $weight-light)
+								strong
+									+fuente(15px, #808019, Arial, $weight-light)
+					@media (max-width: 910px)
+						p
+							+fuente(12px, #fff, Arial, $weight-light)
+							span
+								+fuente(12px, #808019, Arial, $weight-light)
+								strong
+									+fuente(12px, #808019, Arial, $weight-light)
+					@media (max-width: 500px)
+						p
+							+fuente(11px, #fff, Arial, $weight-light)
+							span
+								+fuente(7px, #808019, Arial, $weight-light)
+								strong
+									+fuente(10px, #808019, Arial, $weight-light)
+
+		.slideshowlinks
+			a
+				position: absolute
+				z-index: 101
+				top: 40%
+				+fuente(60px, #fff, Arial, $weight-light)
+				&:last-child
+					right: 3%
+				&:first-child
+					left: 3%
+			@media (max-width: 1060px)
+				a
+					top: 30%
+			@media (max-width: 877px)
+				a
+					top: 25%
+			@media (max-width: 500px)
+				a
+					top: 30%
+					+fuente(40px, #fff, Arial, $weight-light)
+	.activ
+		h2
+			+fuente(19px, #808019, Arial, $weight-bold)
+			padding: 4% 0% 1% 0%
+		h3		
+			+fuente(16px, #72809E, Arial, $weight-bold)
+		img
+			width: 100%	
+		&:last-child
+			background: #fff
+			z-index: 100
+			position: relative
+			+sombra(0, 5px, 8px, -3px)
+			padding-bottom: 1%
+		@media (max-width: 500px)
+			h2
+				+fuente(16px, #808019, Arial, $weight-bold)
+	.plus
+		z-index: 99
+		background: #DBDBDB
+		h4
+			+fuente(18px, #808019, Arial, $weight-bold)
+		p
+			+fuente(12px, #444444, Arial, $weight-light)
+		embed
+			vertical-align: 24px
+			width: 80%
+		&-title
+			padding: 5% 0px 5% 0px
+			h4
+				+fuente(24px, #808019, Arial, $weight-bold)
+				padding-bottom: 1%
+			p
+				+fuente(14px, #686868, Arial, $weight-bold)
+		&:last-child
+			padding-bottom:	4%
+		@media (max-width: 500px)
+			&:first-child
+				padding-top: 10%
+			embed
+				width: 50%
+	.slide-pro
+		padding: 0px !important
+		article
+			width: 100%
+			img
+				width: 100%
+		.slideshowprev
+			a
+				position: absolute
+				z-index: 101
+				top: 40%
+				+fuente(60px, #fff, Arial, $weight-light)
+				&:last-child
+					right: 2%
+				&:first-child
+					left: 2%
+			@media (max-width: 500px)
+				a
+					+fuente(40px, #fff, Arial, $weight-light)
+	.pro
+		&-title
+			padding: 2% 0px 2% 0px
+			h4
+				+fuente(26px, #808019, Arial, $weight-bold)
+			p
+				+fuente(14px, #444444, Arial, $weight-light)
+		.czm
+			p
+				padding: 0px 7%		
+		&-text
+			h5
+				+fuente(14px, #808019, Arial, $weight-bold)	
+			p
+				+fuente(12px, #444444, Arial, $weight-light)
+			embed
+				width: 15%
+			&-ico
+				embed
+					width: 10%
+				span
+					+fuente(9px, #444444, Arial, $weight-light)			
+			&:last-child
+				padding-top: 3%
+		@media (max-width: 500px)
+			&-title
+				h4
+					font-size: 20px
+	.cont
+		margin-top: 4%
+		background-image: url("../images/servicios-de-limpiza-cleanadn.jpg")
+		background-size: 100%
+		background-repeat: no-repeat
+		&-title
+			h6
+				padding: 7% 0px 2% 0px
+				+fuente(35px, #808019, Arial, $weight-bold)
+		&-text
+			padding-top: 2%
+			embed
+				width: 20%
+			span
+				+fuente(12px, #808019, Arial, $weight-bold)
+			p
+				+fuente(12px, #444444, Arial, $weight-light)
+			a	
+				background: #808019
+				padding: 1% 3%
+				+borde_redondo(7px, 7px, 7px, 7px)
+				+fuente(17px, #fff, Arial, $weight-bold)
+			&:last-child
+				padding-bottom: 15%	
+		@media (max-width: 879px)
+			&-title
+				h6
+					padding: 1% 0px 2% 0px
+		@media (max-width: 500px)
+			background: #D2E7E9
+	.cont1
+		background-size: 100%
+		background-repeat: no-repeat
+		&-title
+			h6
+				padding: 2% 0px 1% 0px
+				+fuente(35px, #808019, Arial, $weight-light)
+		&-text
+			padding-top: 2%
+			embed
+				width: 20%
+			span
+				+fuente(12px, #808019, Arial, $weight-bold)
+			p
+				+fuente(12px, #444444, Arial, $weight-light)
+			a	
+				background: #808019
+				padding: 1% 3%
+				+borde_redondo(7px, 7px, 7px, 7px)
+				+fuente(17px, #fff, Arial, $weight-bold)
+			&:last-child
+				padding-bottom: 8%	
+		@media (max-width: 879px)
+			&-title
+				h6
+					padding: 1% 0px 2% 0px
+		@media (max-width: 500px)
+			background: #D2E7E9		
+	.log
+		&-title
+			h6
+				padding: 7% 0px 1% 0px
+				+fuente(27px, #808019, Arial, $weight-bold)
+			p	
+				+fuente(14px, #444444, Arial, $weight-light)	
+		&-text
+			padding-top: 2%
+			img
+				width: 100%
+			h5
+				padding-top: 6%
+				+fuente(18px, #808019, Arial, $weight-bold)	
+			p
+				+fuente(14px, #444444, Arial, $weight-light)
+				padding: 0px 11%
+		@media (max-width: 879px)
+			&-title
+				h6
+					padding: 0% 0px 1% 0px
+			&-text
+				p
+					+fuente(12px, #444444, Arial, $weight-light)
+		@media (max-width: 500px)
+			&-title
+				h6
+					padding: 10% 0px 1% 0px
+					+fuente(20px, #808019, Arial, $weight-bold)
+				p
+					+fuente(12px, #444444, Arial, $weight-light)
+			&-text
+				p
+					+fuente(12px, #444444, Arial, $weight-light)
+	.serv
+		padding-bottom: 4%
+		margin-top: 4%
+		background: #DBDBDB
+		&-title
+			h6
+				padding-top: 3%
+				+fuente(18px, #808019, Arial, $weight-bold)	
+			p	
+				padding: 1% 0px 3% 0px
+				+fuente(14px, #444444, Arial, $weight-light)
+		&-text
+			img
+				width: 50%
+			embed
+				padding-bottom: 3%
+				width: 20%
+			p
+				+fuente(14px, #72809E, Arial, $weight-bold)
+			.ext
+				+fuente(8px, #000, Arial, $weight-light)
+				line-height: 1em
+			&-svg1
+					embed
+						width: 15%
+			&-svg2
+					embed
+						width: 30%
+						padding-bottom: 10%
+			&-svg4
+				img
+					padding-bottom: 10%
+	.test
+		background: #D7D7D7
+		padding-top: 4%
+		padding-bottom: 6%
+		&-title
+			h6
+				padding-bottom: .5%
+				+fuente(18px, #808019, Arial, $weight-bold)	
+			h1
+				padding-bottom: 2%
+				+fuente(12px, #808019, Arial, $weight-bold)	
+		&-text
+			p
+				padding: 0px 7%
+				+fuente(11px, #505151, Arial, $weight-light)
+			a
+				+fuente(14px, #505151, Arial, $weight-bold)
+			&-bor
+				&:last-child
+					border-left: solid 1px #C1C1C1
+				&:first-child
+					border-right: solid 1px #C1C1C1
+	.socios
+		&-title
+			padding: 3% 0px
+			span
+				+fuente(30px, #808E2A, Arial, $weight-bold)	
+		&-cont
+			&-a
+				img
+					width: 90%
+			&-b
+				img
+					margin-top: -7%
+					width: 60%
+			&-c
+				img
+					margin-top: -15%
+					width: 60%
+			&-d
+				img
+					margin-top: -6%
+					width: 90%
+			&-e
+				img
+					margin-top: -15%
+					width: 40%
+	.cobertura
+		background-image: url("../images/fondo-maps.png")
+		background-attachment: fixed
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		a
+			cursor: text
+			+fuente(30px, #fff, Arial, $weight-bold)
+		p
+			margin: 3% 0px
+			+fuente(13px, #fff, Arial, $weight-light)
+		li
+			list-style: none
+			+fuente(16px, #fff, Arial, $weight-light)
+	.maps
+		iframe
+			width: 100%
+			height: 300px
+
+			
+	//SECTION CONTACTO		
+.slider1
+	z-index: 101
+	article
+		width: 100%
+		img
+			width: 100%
+		p
+			position: absolute
+			top: 40%
+			left: 40%
+			+fuente(80px, #fff, Arial, $weight-bold)
+			opacity: .6
+.nosc
+	z-index: 100
+	+sombra(0px, 8px, 7px, -7px)
+	&-ed
+		margin-bottom: 0px !important
+		h2
+			padding-top: 10%
+			+fuente(36px, #808019, Arial, $weight-bold)
+		p
+			+fuente(15px, #000, Arial, $weight-light)
+			padding: 3% 22% 0px 22%
+		img
+			margin-top: -4%	
+.nosct
+	padding: 4%
+	z-index: 99
+	background: #E7E7E7
+	h2
+		padding: 3% 0px
+		+fuente(25px, #808019, Arial, $weight-bold)
+	p
+		padding: 0px 18%
+		+fuente(13px, #000, Arial, $weight-light)
+	ul
+		margin-left: 40%
+		li
+			list-style-type: circle
+			+fuente(13px, #000, Arial, $weight-light)
+	&-sec1
+		embed
+			width: 15%
+	&-sec2
+		border-right: solid 1px #808019
+		border-left: solid 1px #808019
+		margin-top: 3.8% 
+		embed
+			width: 18%
+	&-sec3
+		margin-top: 8.5%
+.dir
+	&-title
+		padding: 4% 0px
+		h2
+			+fuente(32px, #808019, Arial, $weight-bold)
+		p
+			+fuente(20px, #727272, Arial, $weight-light)			
+	&-text
+		padding: 1%
+		background: #444444
+		p
+			+fuente(25px, #808019, Arial, $weight-bold)
+		a
+			+fuente(13px, #fff, Arial, $weight-light)
+		.dir-text-md,.dir-text-md2
+			embed
+				width: 8%
+		.dir-text-md2
+			embed
+				margin-bottom: 2%
+		.dir-text-md1
+			embed
+				width: 6%
+.imp
+	background: #E7E7E7
+	iframe
+		width: 100%
+		height: 100%
+	p
+		+fuente(18px, #808019, Arial, $weight-bold)
+	form
+
+		input[type=text], input[type=email], input[type=textarea]
+			margin-top: 2%
+			width: 80%
+			background: #D0D0D0
+			border: 0px
+			+fuente(13px, #000, Arial, $weight-light)
+			padding-left: 2%
+		input[type=text], input[type=email]
+			height: 40px
+		input[type=textarea]
+			height: 200px
+		input[type=submit]
+			margin-top: 3%
+			background: #D0D0D0
+			border: 0px
+			+fuente(17px, #707070, Arial, $weight-bold)
+			padding: 1.5% 3.5%
+		.capcha
+			margin-left: 26%
+
+// SECTION HOME
+
+.wrapper
+	.promo
+		margin-top: -2.2%
+		background: #808E2A
+		a
+			+fuente(34px, #fff, Arial, 0)	
+		p
+			+fuente(14px, #CFCDCD, Arial, 0)
+			padding: 0px 32%
+			padding-bottom: 1%
+	.cont0
+		+sombra(0, 5px, 8px, -3px)
+		padding: 2% 0px
+		background: #444444
+		p
+			+fuente(17px, #808E2A, Arial, $weight-light)
+		span,a
+			+fuente(12px, #fff, Arial, $weight-light)
+		.rec
+			width: 20%
+		.rec1
+			width: 13%
+	.serv0
+		padding: 4% 0px
+		h2
+			+fuente(19px, #808E2A, Arial, $weight-bold)
+		p	
+			padding: 0px 34%
+			+fuente(12px, #000, Arial, $weight-bold)
+	.serv-sec
+		padding: 3% 0px
+		background: #D7D7D7
+		span
+			+fuente(24px, #808E2A, Arial, $weight-light)
+		embed
+			width: 25%
+			margin: 12% 0px
+		h2
+			+fuente(16px, #7286B3, Arial, $weight-bold)
+		p
+			+fuente(11px, #000, Arial, $weight-light)
+	.serv-sec-sub
+		background: #444444
+		p
+			padding-bottom: 1% 
+			+fuente(18px, #fff, Arial, $weight-light)
+	.prod0
+		h3
+			+fuente(22px, #004E3A, Arial, $weight-light)
+		p
+			+fuente(16px, #000, Arial, $weight-bold)
+			margin-bottom: 6%
+		a
+			+fuente(16px, #ADADAD, Arial, $weight-bold)
+			+borde_redondo(5px, 5px, 5px, 5px)
+			padding: 1% 8%
+			border: solid 1px #848484
+		&-text
+			margin-top: 14%
+	.sect
+		background: #757575
+		height: 500px
+		overflow: hidden
+		&-titles
+			border: solid 0px #fff
+			+sombra(0, 3px, 8px, -3px)
+			a
+				h2
+					padding: 0px 10%
+					margin-top: 10%
+					+fuente(16px, #fff, Arial, $weight-bold)
+		&-cont
+			p
+				padding: 8% 6%
+			.lip1, .lip2, .lip3, .lip4, .lip5, .lip6
+				display: none
+			.lip
+				display: block !important
+	.serp
+		&-title
+			margin-top: 4%
+			span
+				+fuente(22px, #808E2A, Arial, $weight-bold)	
+			p
+				padding: 0px 27%
+				+fuente(13px, #000, Arial, $weight-bold)
+		&-cont
+			margin-top: 3%
+			&-md
+				padding-left: 6%
+				border-left: solid 2px #A5A5A5
+	.hero-title
+		margin-top: 5%
+		p
+			+fuente(22px, #808E2A, Arial, $weight-light)

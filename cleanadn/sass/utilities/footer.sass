@@ -1,0 +1,35 @@
+.footer
+	background: #686868
+	.log
+		img
+			margin-top: 15%
+			width: 60%
+	p
+		+fuente(12px, #fff, Arial, $weight-light)
+	a
+		+fuente(11px, #fff, Arial, $weight-light)
+	.cont
+		a
+			+borde_redondo(5px, 5px, 5px, 5px)
+			background: #fff
+			padding: 1% 3%
+			+fuente(12px, #686868, Arial, $weight-light)
+	.cont-title
+		p
+			+fuente(17px, #fff, Arial, $weight-bold)
+	.tel
+		border-right: solid 1px #BCBCBC
+	.tel1
+		margin-left: 3%
+		p
+				margin-bottom: -6px
+	.secc1
+		background: #444444
+		p
+			+fuente(10px, #fff, Arial, $weight-light)	
+		&-pd
+			p
+				margin-top: 1%	
+	@media (max-width: 500px)
+		.tel
+			border-right: solid 0px #BCBCBC
